@@ -1,0 +1,37 @@
+{
+  "name": "react-component-base",
+  "version": "0.0.1",
+  "description": "React Component Base.",
+  "main": "index.js",
+  "repository": "https://github.com/js-ni/react-component-base.git",
+  "author": "Paulo McNally <paulomcnally@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "webpack-dev-server",
+    "docs": "NODE_ENV=production webpack -p",
+    "build": "babel src -d dist",
+    "clean": "rm -rf dist",
+    "dist": "yarn run clean && yarn run build"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^3.1.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
+    "raw-loader": "^0.5.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
