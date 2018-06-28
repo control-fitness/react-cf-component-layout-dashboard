@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-export const Example = styled.div`
+const Example = styled.div`
   position: absolute;
   overflow: hidden;
-`
+  color: red;
+`;
+
+export default Example;

@@ -1,7 +1,6 @@
-import React from 'react'
-import Base from '../dist'
+import React from 'react';
+import Base from '../src';
 
-const App = () =>
-  <Base />
+const App = () => <Base />;
 
-export default App
+export default App;
