@@ -1,3 +1,3 @@
-import NavigationMain from './components/NavigationMain';
+import Dashboard from './components/Dashboard';
 
-export default NavigationMain;
+export default Dashboard;

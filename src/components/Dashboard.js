@@ -6,7 +6,7 @@ import Navigation from '../containers/Navigation';
 import { fetchMain } from '../actions';
 import store from '../store';
 
-const NavigationMain = function Base(props) {
+const Dashboard = function Base(props) {
   const { location, children } = props;
 
   // Fetch main menu
@@ -23,15 +23,20 @@ const NavigationMain = function Base(props) {
   );
 };
 
-NavigationMain.propTypes = {
+Dashboard.defaultProps = {
+  location: {},
+  children: null,
+};
+
+Dashboard.propTypes = {
   location: PropTypes.shape({
     hash: PropTypes.string,
     key: PropTypes.string,
     pathname: PropTypes.string,
     search: PropTypes.string,
     state: PropTypes.string,
-  }).isRequired,
-  children: PropTypes.element.isRequired,
+  }),
+  children: PropTypes.node,
 };
 
-export default NavigationMain;
+export default Dashboard;
