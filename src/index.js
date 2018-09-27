@@ -1,3 +1,3 @@
-import Base from './components/Base';
+import NavigationMain from './components/NavigationMain';
 
-export default Base;
+export default NavigationMain;

@@ -1,10 +1,10 @@
-# react-component-base
+# react-cf-component-layout-dashboard
 
-React Component Base.
+Control Fitness - Layout - Dashboard.
 
 Clone repository
 
-    $ git clone https://github.com/js-ni/react-component-base.git
+    $ git clone https://github.com/control-fitness/react-cf-component-layout-dashboard.git
 
 Install dependencies
 
