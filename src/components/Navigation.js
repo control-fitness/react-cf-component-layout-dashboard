@@ -36,7 +36,7 @@ const Navigation = ({
     {show
         && (
           <Responsive as={Menu.Menu} {...Responsive.onlyMobile} position="right">
-            <Items list={list} location={location} />
+            <Items list={list} location={location} toggle={toggle} />
           </Responsive>
         )
     }

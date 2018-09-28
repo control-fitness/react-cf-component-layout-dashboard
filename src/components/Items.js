@@ -6,13 +6,14 @@ import {
 import { Link } from 'react-router-dom';
 import I18n from 'react-cf-helper-i18n';
 
-const Items = ({ list, location }) => {
+const Items = ({ list, location, toggle }) => {
   if (list.length > 0) {
     const items = list.map(item => (
       <Menu.Item
         as={Link}
         to={item.path}
         key={item.path}
+        onClick={toggle}
         active={item.path === location.pathname}
         name={item.name}
       >
@@ -25,6 +26,10 @@ const Items = ({ list, location }) => {
   return null;
 };
 
+Items.defaultProps = {
+  toggle: () => {},
+};
+
 Items.propTypes = {
   list: PropTypes.arrayOf(
     PropTypes.shape({
@@ -32,6 +37,7 @@ Items.propTypes = {
       path: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
+  toggle: PropTypes.func,
 };
 
 export default Items;
