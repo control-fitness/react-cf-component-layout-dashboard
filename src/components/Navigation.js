@@ -59,6 +59,7 @@ Navigation.propTypes = {
       path: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
+  user: PropTypes.objectOf(PropTypes.string).isRequired,
   location: PropTypes.objectOf(PropTypes.string),
   show: PropTypes.bool.isRequired,
   toggle: PropTypes.func.isRequired,
