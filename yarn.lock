@@ -4344,9 +4344,9 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-cf-graphql-client@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/react-cf-graphql-client/-/react-cf-graphql-client-0.0.6.tgz#088220d5f6b8acfcbba71606b291961b4a7756ae"
+react-cf-graphql-client@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/react-cf-graphql-client/-/react-cf-graphql-client-0.0.7.tgz#cbf7a49f2514c64e4abc0a8c0342625851d3a3af"
   dependencies:
     apollo-boost "^0.1.16"
     graphql "^14.0.2"

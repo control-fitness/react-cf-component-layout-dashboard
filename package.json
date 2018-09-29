@@ -1,6 +1,6 @@
 {
   "name": "react-cf-component-layout-dashboard",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Control Fitness - Layout - Dashboard",
   "main": "index.js",
   "repository": "https://github.com/control-fitness/react-cf-component-layout-dashboard.git",
@@ -20,7 +20,7 @@
     "found": "^0.3.12",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
-    "react-cf-graphql-client": "^0.0.6",
+    "react-cf-graphql-client": "^0.0.7",
     "react-cf-helper-cdn": "^0.0.3",
     "react-cf-helper-i18n": "^0.1.2",
     "react-dom": "^16.4.1",
