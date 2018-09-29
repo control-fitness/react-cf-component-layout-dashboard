@@ -4,6 +4,7 @@ import { toggle } from '../actions';
 
 const mapStateToProps = (state, ownProps) => ({
   list: state.api.list,
+  user: state.api.user,
   show: state.form.show,
   location: ownProps.location,
 });

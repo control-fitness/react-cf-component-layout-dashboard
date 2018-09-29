@@ -5,9 +5,10 @@ import {
 } from 'semantic-ui-react';
 import Cdn from 'react-cf-helper-cdn';
 import Items from './Items';
+import Profile from './Profile';
 
 const Navigation = ({
-  list, show, location, toggle,
+  list, user, show, location, toggle,
 }) => (
   <Menu borderless compact fixed="top" fluid stackable>
     <Menu.Menu>
@@ -42,6 +43,7 @@ const Navigation = ({
     }
     <Responsive as={Menu.Menu} minWidth={768} position="right">
       <Items list={list} location={location} />
+      <Profile name={user.name} email={user.email} />
     </Responsive>
   </Menu>
 );

@@ -1,11 +1,15 @@
 
-import { RECEIVE_DATA } from '../actions';
+import { RECEIVE_LIST, RECEIVE_USER } from '../actions';
 
-const api = (state = { list: [] }, action) => {
+const api = (state = { list: [], user: {} }, action) => {
   switch (action.type) {
-    case RECEIVE_DATA:
+    case RECEIVE_LIST:
       return Object.assign({}, state, {
         list: action.data,
+      });
+    case RECEIVE_USER:
+      return Object.assign({}, state, {
+        user: action.data,
       });
     default:
       return state;

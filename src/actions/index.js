@@ -1,7 +1,8 @@
 import Client, { Graphql } from 'react-cf-graphql-client';
 
 export const FETCH = 'FETCH';
-export const RECEIVE_DATA = 'RECEIVE_DATA';
+export const RECEIVE_LIST = 'RECEIVE_LIST';
+export const RECEIVE_USER = 'RECEIVE_USER';
 export const TOGGLE = 'TOGGLE';
 
 /**
@@ -15,9 +16,20 @@ export const toggle = () => ({
  * Set received data to state list
  * @param {*} data
  */
-function receiveData(data) {
+function receiveList(data) {
   return {
-    type: RECEIVE_DATA,
+    type: RECEIVE_LIST,
+    data,
+  };
+}
+
+/**
+ * Set received data to state user
+ * @param {*} data
+ */
+function receiveUser(data) {
+  return {
+    type: RECEIVE_USER,
     data,
   };
 }
@@ -33,6 +45,13 @@ export const fetchMain = dispath => Client.query({
         name
         path
       }
+      accountUserMe {
+        name
+        email
+      }
     }
   `,
-}).then(result => dispath(receiveData(result.data.coreNavigationMain)));
+}).then((result) => {
+  dispath(receiveList(result.data.coreNavigationMain));
+  dispath(receiveUser(result.data.accountUserMe));
+});
