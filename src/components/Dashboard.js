@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Container } from 'semantic-ui-react';
 import { Provider } from 'react-redux';
 import Navigation from '../containers/Navigation';
+import Logout from '../containers/Logout';
 import { fetchMain } from '../actions';
 import store from '../store';
 
@@ -16,6 +17,7 @@ const Dashboard = function Base(props) {
   return (
     <Provider store={store}>
       <Container fluid>
+        <Logout />
         <Navigation location={location} />
         {children}
       </Container>

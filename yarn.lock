@@ -4344,6 +4344,17 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-cf-component-account-user-logout@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-cf-component-account-user-logout/-/react-cf-component-account-user-logout-0.0.1.tgz#41f3d07de370f35a9c769d062469f351308a19af"
+  dependencies:
+    js-cookie "^2.2.0"
+    prop-types "^15.6.2"
+    react "^16.4.1"
+    react-cf-helper-i18n "^0.1.2"
+    react-dom "^16.4.1"
+    semantic-ui-react "^0.82.3"
+
 react-cf-graphql-client@^0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/react-cf-graphql-client/-/react-cf-graphql-client-0.0.7.tgz#cbf7a49f2514c64e4abc0a8c0342625851d3a3af"

@@ -1,6 +1,6 @@
 import Client, { Graphql } from 'react-cf-graphql-client';
 
-export const FETCH = 'FETCH';
+export const PROFILE_LOGOUT = 'PROFILE_LOGOUT';
 export const RECEIVE_LIST = 'RECEIVE_LIST';
 export const RECEIVE_USER = 'RECEIVE_USER';
 export const TOGGLE = 'TOGGLE';
@@ -31,6 +31,17 @@ function receiveUser(data) {
   return {
     type: RECEIVE_USER,
     data,
+  };
+}
+
+/**
+ * Set true/false to state openLogout
+ * @param {*} data
+ */
+export function profileLogout(logout) {
+  return {
+    type: PROFILE_LOGOUT,
+    logout,
   };
 }
 

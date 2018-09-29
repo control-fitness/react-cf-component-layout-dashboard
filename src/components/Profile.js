@@ -28,7 +28,9 @@ const About = ({ url, name, email }) => (
  * Profile
  * @param {String} avatarUrl
  */
-const Profile = ({ avatarUrl, name, email }) => {
+const Profile = ({
+  avatarUrl, name, email, onLogout,
+}) => {
   const trigger = <Avatar url={avatarUrl} />;
   return (
     <Dropdown item trigger={trigger}>
@@ -46,8 +48,7 @@ const Profile = ({ avatarUrl, name, email }) => {
         />
         <Dropdown.Divider />
         <Dropdown.Item
-          as={Link}
-          to="/logout"
+          onClick={() => onLogout(true)}
           icon="sign out"
           text="Cerrar sesión"
         />
@@ -66,6 +67,7 @@ Profile.propTypes = {
   avatarUrl: PropTypes.string,
   name: PropTypes.string,
   email: PropTypes.string,
+  onLogout: PropTypes.func.isRequired,
 };
 
 Avatar.propTypes = {
