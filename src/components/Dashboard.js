@@ -4,6 +4,7 @@ import { Container } from 'semantic-ui-react';
 import { Provider } from 'react-redux';
 import Navigation from '../containers/Navigation';
 import Logout from '../containers/Logout';
+import Page from './style';
 import { fetchMain } from '../actions';
 import store from '../store';
 
@@ -19,7 +20,9 @@ const Dashboard = function Base(props) {
       <Container fluid>
         <Logout />
         <Navigation location={location} />
-        {children}
+        <Page>
+          {children}
+        </Page>
       </Container>
     </Provider>
   );
