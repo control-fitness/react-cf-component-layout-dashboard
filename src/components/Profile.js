@@ -37,7 +37,7 @@ const Profile = ({
       <Dropdown.Menu>
         <Dropdown.Item
           as={Link}
-          to="/account"
+          to="/account/user/me"
           text={(
             <About
               url={avatarUrl}
