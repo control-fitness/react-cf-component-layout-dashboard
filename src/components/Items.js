@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {
   Menu,
   Loader,
-  Dimmer,
 } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import I18n from 'react-cf-helper-i18n';
